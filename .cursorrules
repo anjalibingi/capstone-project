@@ -1,0 +1,35 @@
+# Project: Capstone Project
+
+## Stack
+- Frontend: React (functional components, hooks)
+- Backend: Node.js + Express
+- Database: MongoDB (Mongoose for schema modeling)
+- Styling: Tailwind CSS
+- Package manager: npm
+
+## Folder Structure
+- /client — React frontend (components, pages, hooks, assets)
+- /server — Express backend (routes, controllers, models, middleware)
+- /server/models — Mongoose schemas
+- /server/routes — API route definitions
+- /server/controllers — Business logic for each route
+- .env — environment variables (never commit this file)
+
+## Coding Conventions
+- Use functional components with React Hooks (no class components)
+- Use async/await for asynchronous code, not .then() chains
+- Use camelCase for variable and function names
+- Use PascalCase for React component names and files (e.g. Navbar.jsx)
+- Keep components small and single-responsibility
+- API responses should follow a consistent JSON shape: { success, data, message }
+- Handle errors with try/catch and proper HTTP status codes
+- Environment variables accessed only via process.env, never hardcoded
+
+## Commit Convention
+- Follow Conventional Commits format: type(scope): description
+- Common types: feat, fix, docs, chore, refactor, style, test
+
+## Notes for AI Assistant
+- Prioritize readable, well-commented code over cleverness
+- Suggest improvements to README, folder structure, or code quality when relevant
+- Ask before making large structural changes (e.g. renaming folders, changing stack)
